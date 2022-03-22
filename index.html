@@ -10,7 +10,10 @@
 <body>
     <div class="container-wrapper">
         <div class="background">
-            <h1>Odin</h1>
+            <div>
+                <img src="odin-coffee-beans.svg">
+                <h1>Coffee Bluez</h1>
+            </div>
         </div>
         <div class="main-content">
             <div class="header">
@@ -26,30 +29,34 @@
                 <h2>Let's do this!</h2>
                 <form action="" method="post" class="form-container">
                     <div>
-                        <label for="firstName">First Name:</label>
-                        <input type="text" id="firstName">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" required>
                     </div>
                     <div>
-                        <label for="lastName">Last Name:</label>
-                        <input type="text" id="lastName">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" required>
                     </div>
                     <div>      
-                        <label for="user_email">Email:</label>
-                        <input type="email" id="user_email" placeholder=""you@example.com">
+                        <label for="user_email">Email</label>
+                        <input type="email" id="user_email" placeholder=""you@example.com" required>
                     </div>
                     <div>
-                        <label for="phone_number">Phone Number:</label>
-                        <input type="tel" id="phone_number" name="phone_number">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="tel" id="phone_number" name="phone_number" required>
                     </div>
                     <div>
                         <label for="user_password">Password:</label>
-                        <input type="password" id="user_password name="password">
+                        <input type="password" id="user_password name="password" required>
                     </div>
                     <div>
-                        <label for="user_confirm_password">Confirm Password:</label>
-                        <input type="password" id="user_confirm_password name="password">
+                        <label for="user_confirm_password">Confirm Password</label>
+                        <input type="password" id="user_confirm_password name="password" required>
                     </div>
                 </form>
+            </div>
+            <div>
+                <button>Submit</button>
+                <p>Already have an account? <strong class="login">Log in</strong></p>
             </div>
             <!-- <div class="form"></div> -->
         </div>

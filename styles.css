@@ -1,3 +1,7 @@
+:root {
+    box-sizing: border-box;
+}
+
 .container-wrapper{
     /* background-color: green; */
     display: flex;
@@ -9,13 +13,28 @@
 .background{
     height: 100%;
     flex: 1;
-    background-color: pink;
-    text-align: center;
     background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29mZmVlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60');
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+.background > div{
+    background-color: rgba(0,0,0, .6);
+    display: flex;
+    height: 80px;
+    width: 100%;
+    padding-left: 30px;
+}
+
+.background > div > * {
+    text-align: center;
+}
+
+.background h1{
+    color: white;
+    margin-left: 20px;
+    /* font-size: 40px; */
 }
 
 .main-content{
@@ -28,7 +47,7 @@
 }
 
 .main-content > div{
-    margin-left: 50px;
+    padding-left: 50px;
 }
 
 .header{
@@ -37,14 +56,15 @@
 }
 
 .form-container-wrapper{
-    background-color: green;
+    background-color: white;
+    box-shadow: 0 8px 40px -30px #000;
 }
 
 .form-container{
     width: 650px;
-    background-color: pink;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .form-container > div{
@@ -54,6 +74,29 @@
     margin: 10px 0;
 }
 
-input{
+input, button{
     width: 200px;
+    border-radius: 5px;
+    height: 25px;
+    border: 1.5px solid #E5E7EB;
+}
+
+label{
+    font-weight: bold;
+}
+
+button{
+    margin-top: 30px;
+    height: 45px;
+    font-size: 20px;
+    background-color: #596D48;
+    color: white;
+}
+
+.login{
+    color: #596D48;
+}
+
+input[type=password]:invalid{
+    border: 2px solid red;
 }
